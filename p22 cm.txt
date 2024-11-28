@@ -1,0 +1,17 @@
+# Confusion matrix values
+TP = 90
+FN = 210
+FP = 140
+TN = 9560
+
+accuracy = (TP + TN) / (TP + TN + FP + FN)
+print(f"Accuracy: {accuracy:.4f}")
+
+error_rate = (FP + FN) / (TP + TN + FP + FN)
+print(f"Error Rate: {error_rate:.4f}")
+
+precision = TP / (TP + FP)
+print(f"Precision: {precision:.4f}")
+
+recall = TP / (TP + FN)
+print(f"Recall: {recall:.4f}")
